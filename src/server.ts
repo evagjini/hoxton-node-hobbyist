@@ -40,7 +40,7 @@ app.post("/users", async (req, res) => {
   const userData = {
     name: req.body.name,
     image: req.body.image,
-    email: req.body.name,
+    email: req.body.email,
     hobbies: req.body.hobbies ? req.body.hobbies : [],
   };
   const user = await prisma.user.create({
